@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF5EB224-6EB7-4BA2-A758-FFCF2FE0E928}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrailleApplication</RootNamespace>
+    <AssemblyName>BrailleApplication</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Braille.cs" />
+    <Compile Include="BrailleManager.cs">
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrailleDisplayForm.resx">
+      <DependentUpon>BrailleDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleForm.resx">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="BrailleDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrailleDisplayForm.Designer.cs">
+      <DependentUpon>BrailleDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleForm.Designer.cs">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num_4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icon\carroty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_a.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_b.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_c.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_e.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_f.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_g.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_j.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_k.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_l.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_m.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_n.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_o.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_p.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_q.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_s.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_u.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_v.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_w.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_x.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_y.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch_z.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\point_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\point_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\point_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\point_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\point_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\point_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\back.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
